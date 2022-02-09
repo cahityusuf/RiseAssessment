@@ -5,9 +5,11 @@
 4. Projelerin tek seferde çalıştırılabilmesi için docker-compose.yaml dosyası oluşturulmuştur. Dosyanın bulunduğu diinde "docker-compose up" komutu ile projeler çalıştırabilir.
 5. PostgreSql veri tabanıda docker container olarak ayağa kalkmaktadır. 
 6. Veri tabanı Bilgileri ---> Host name :"host.docker.internal" ,UserName: "cykafadar", Password:"cyk112233."
-7. RabbitMq kullanımı için container yerine "https://www.cloudamqp.com" sitesinden bir Instance yaratılmış ve kuyruk cloud ta oluşturulmuştur. Ek ayar gerekmez.
-8. Herbir proje için k8s klasörü altında Kubernetes deployment, service ve secret configurasyon dosyaları yazılmıştır.
-9. k8s dizininde "kubectl apply -f ." komutu ile kubernetesine deploy edilebilir.
+7. Veri tabanı monitoring işlemleri için PgAdmin kullanılmıştır. http://localhost:5050 adresinden ayağa kalkar.
+8. PgAdmin bilgileri: username: user@domain.com, password: cyk112233
+9. RabbitMq kullanımı için container yerine "https://www.cloudamqp.com" sitesinden bir Instance yaratılmış ve kuyruk cloud ta oluşturulmuştur. Ek ayar gerekmez.
+10. Herbir proje için k8s klasörü altında Kubernetes deployment, service ve secret configurasyon dosyaları yazılmıştır.
+11. k8s dizininde "kubectl apply -f ." komutu ile kubernetesine deploy edilebilir.
 
 # Rise.Contact
 1. User ve ContactInfo adında 2 tablo oluşturulmuştur. User tablosunda kişi bilgisi ,ContactInfo tablosunda kişiye ait iletişim bilgileri tutulmuştur. 
