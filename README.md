@@ -16,12 +16,14 @@
 2. Migration dosyaları Rise.Contact.Infrastracture katmanındadır.
 3. "update-database" komutu ile tüm tablolar oluşturulabilir.
 4. Sadece 2 tabloya aile CRUD operasyonları bu projede yapılır.
+5. http://localhost:5000 adresinden ayağa kalkar.
 
 # Rise.Contact.Report
 1. Repors ve ReportsDetail isminde 2 tablosu vardır. Report tablosu talep edilen rapor için oluşturulan ID ile bir rapor talebi oluşmasını sağlar. ReportDetail ise WorkerService'den gelen rapor detayını ilgili talebi yapan rapor Id ile saklar.
 2. Oluşan tüm raporlar veri tabanında tutlur ve istenildiğinde Oluşan rapor Id ile ulaşılıabilir.
 3. iki methodu vardır. ilk method rapor talebi loluşturuan RepaortCreate, ikinci method WoprkerServiceden gele Http Requesti yapalayan ReportCapture methudu.
 4. Rapor talebi oluşturur, Talebi Kuyruğa ekler ve Kuyruktan gelen Rapor detayını kendi ver tabanına kaydeder.
+5. http://localhost:5001 adresinden ayağa kalkar
 
 
 # Rise.Contact.Workerservice
